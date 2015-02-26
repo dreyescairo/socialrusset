@@ -5,7 +5,7 @@ var express = require('express');
 var app = express();
 var db;
 
-var config{
+var config={
  "USER"    : "dreyescairo", 
  "PASS"    : "Ssvegeta13?",
  "HOST"    : "ds047911.mongolab.com:47911/sr_blog",
