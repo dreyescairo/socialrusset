@@ -5,20 +5,8 @@ var express = require('express');
 var app = express();
 var db;
 
-var config={
- "USER"    : "dreyescairo", 
- "PASS"    : "Ssvegeta13?",
- "HOST"    : "ds047911.mongolab.com:47911/sr_blog",
- "PORT"    : "47911",
- "DATABASE" : "sr_blog"
+mongoose.connect('mongodb://<dreyescairo>:<Ssvegeta13?>@ds047911.mongolab.com:47911/sr_blog');
 
-};
-
-var dbPath = "mongodb://"+config.USER + ":"+
-	config.PASS + "@"+
-	config.HOST + ":"+
-	config.port + "/"+
-	config.DATABASE;
 	
 var standardGreeting = 'Hello World!';
 var Schema = mongoose.Schema;
@@ -28,7 +16,7 @@ var greetingSchema = new Schema({
 	
 var Greeting = mongoose.model('greetingSchema');
 
-db = mongoose.connect(dbPath);
+
 
 mongoose.connection.once('open',function(){
 var greeting;
