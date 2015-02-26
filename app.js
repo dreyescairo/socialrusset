@@ -21,8 +21,8 @@ var dbPath = "mongodb://"+config.USER + ":"+
 	config.DATABASE;
 	
 var standardGreeting = 'Hello World!';
-
-var greetingSchema = mongoose.Schema({
+var Schema = mongoose.Schema;
+var greetingSchema = new Schema({
 	sentence: String
 	});
 	
