@@ -5,7 +5,8 @@ var express = require('express');
 var app = express();
 var db;
 
-mongoose.connect('mongodb://<dreyescairo>:<Ssvegeta13?>@ds047911.mongolab.com:47911/sr_blog');
+var uri = 'mongodb://dreyescairo:Ssvegeta13?@ds047911.mongolab.com:47911/sr_blog'
+mongoose.connect(uri);
 
 	
 var standardGreeting = 'Hello World!';
