@@ -14,7 +14,7 @@ var greetingSchema = new Schema({
 	sentence: String
 	});
 	
-var Greeting = mongoose.model('greetingSchema');
+var Greeting = mongoose.model('greetingSchema', greetingschema);
 
 
 
